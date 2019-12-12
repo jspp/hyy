@@ -3,7 +3,7 @@ toast('--------- 开始运行程序------------------');
 sleep(2000);
 try {
     toast("打印当前活动的 activity"+currentActivity());
-    //请求横屏截图
+    //请求横屏截图 如果landscape为false, 则表示竖屏截图; true为横屏截图。默认为当前设备的方向
     if (!requestScreenCapture()) {
         toast("--------- 请求截图权限失败 ---------");
         exit();
